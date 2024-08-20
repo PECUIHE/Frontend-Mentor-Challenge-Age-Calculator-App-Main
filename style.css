@@ -1,0 +1,145 @@
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+  
+  @font-face {
+    font-family: 'Poppins-ExtraBoldItalic';
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  }
+
+  @font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: 'Poppins-Italic';
+    src: url(./assets/fonts/Poppins-Italic.ttf);
+  }
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 10px 10px 100px 10px;
+  }
+
+  .input-flex {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .input-container {
+    font-family: 'Poppins-ExtraBold';
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .input-container span {
+    color: hsl(0, 1%, 44%);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .input-container input {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 90%;
+    padding: 15px 5px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 94%);
+    cursor: pointer;
+  }
+
+  .input-container input:hover {
+    border: 1px solid hsl(259, 100%, 65%);
+  }
+
+  .input-container input:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+    outline: none;
+  }
+
+  .input-container small {
+    font-family: 'Poppins-Italic';
+    color: hsl(0, 100%, 67%);
+    font-size: 8px;
+  }
+
+  .submission {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .submission hr {
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 94%);
+  }
+
+  .submit-btn {
+    padding: 10px;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover {
+    background-color: hsl(0, 0%, 8%);
+  }
+
+  .output span {
+    font-size: 2.5rem;
+    color: hsl(259, 100%, 65%);
+  }
+
+  .output h1 {
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 8%);
+  }
+
+  .output {
+    font-family: 'Poppins-ExtraBoldItalic' !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      max-width: 320px;
+    }
+
+    .submit-btn {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  
